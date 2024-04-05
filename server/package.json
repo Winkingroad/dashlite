@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "jest": "^29.7.0",
+    "joi": "^17.12.3",
+    "mongoose": "^8.3.0",
+    "nodemon": "^3.1.0",
+    "superset": "^2.0.1",
+    "supertest": "^6.3.4"
+  }
+}
