@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
+
 function App() {
   const [reportData, setReportData] = useState([]);
   const [reportType, setReportType] = useState('totalMilesDriven');
@@ -13,8 +14,9 @@ function App() {
   const [itemsPerPage] = useState(10);
 
   const fetchReport = () => {
-    const url = `http://localhost:3000/reports?reportType=${reportType}&frequency=${frequency}&startDate=${startDate}&endDate=${endDate}&make=${make}&type=${type}`;
-
+    const backendUrl = "http://localhost:3000" || process.env.REACT_APP_BACKEND_URI;
+    const url = `https://dashlite.onrender.com/reports?reportType=${reportType}&frequency=${frequency}&startDate=${startDate}&endDate=${endDate}&make=${make}&type=${type}`;
+    console.log(url)
     fetch(url)
       .then(response => {
         if (!response.ok) {
