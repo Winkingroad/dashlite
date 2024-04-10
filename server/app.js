@@ -20,15 +20,11 @@ mongoose.connect(process.env.MONGO_URI, {
 .then(() => console.log("Connection successful"))
 .catch((err) => console.error("Connection failed:", err));
 
-// Register vehicle routes
+// vehicle routes
 app.use(vehicleRoutes);
 
 // Register CSV upload route
 app.use(csvRoutes);
 
 
-
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
-});
-module.exports = app;
+module.exports = {app};
