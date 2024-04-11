@@ -97,4 +97,4 @@ The project includes unit tests for backend routes using Jest and Supertest. To 
 npm test
 ```
 
-Please replace `<your MongoDB connection URI>` with your actual MongoDB connection URI. Let me know if you need help with anything else!
+Please replace `<your MongoDB connection URI>` with your actual MongoDB connection URI.
