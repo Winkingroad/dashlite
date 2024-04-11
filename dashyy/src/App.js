@@ -61,7 +61,7 @@ function App() {
 
   useEffect(() => {
     fetchReport();
-  }, [currentPage]);
+  }, [currentPage , frequency,make,reportType,startDate,endDate,type]);
 
   // Pagination
   const indexOfLastItem = currentPage * itemsPerPage;
